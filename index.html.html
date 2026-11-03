@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Денис Андрейчик — игры в образовании</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&family=Unbounded:wght@500;700&display=swap">
+<style>
+:root{--bg:#EDF3F0;--surf:#fff;--ink:#14302B;--mut:#52665F;--acc:#0E7C66;--acc2:#FF8A3D;--line:#D0DDD8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1C19;--surf:#14302B;--ink:#E6F2EE;--mut:#98B3AB;--acc:#3FD1B0;--acc2:#FF8A3D;--line:#25463F;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D1C19;--surf:#14302B;--ink:#E6F2EE;--mut:#98B3AB;--acc:#3FD1B0;--acc2:#FF8A3D;--line:#25463F;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Onest,system-ui,sans-serif}
+h1,h2,h3{font-family:Unbounded,Onest,sans-serif;line-height:1.15;margin:0 0 .6em}
+h1{font-size:clamp(28px,6vw,52px);font-weight:700}h2{font-size:clamp(22px,4vw,32px)}h3{font-size:18px}
+p{margin:0 0 1em;max-width:68ch}a{color:var(--acc)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:4px;padding:10px 16px;overflow-x:auto;white-space:nowrap}
+nav a{padding:8px 14px;border-radius:99px;text-decoration:none;color:var(--ink);font-weight:500}
+nav a:hover,nav a:focus-visible{background:var(--acc);color:#fff;outline:none}
+section{max-width:1000px;margin:0 auto;padding:56px 20px}
+.hero{display:grid;gap:32px;grid-template-columns:1fr;align-items:center}
+@media(min-width:760px){.hero{grid-template-columns:1.5fr 1fr}}
+.lead{font-size:20px;color:var(--mut)}
+.photo{width:100%;max-width:320px;aspect-ratio:4/5;border-radius:160px 160px 16px 16px;background:var(--acc);display:grid;place-items:center;color:#fff;font:700 88px Unbounded,sans-serif;margin:0 auto}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;background:var(--acc);color:#fff;text-decoration:none;font-weight:700;margin:0 8px 8px 0}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:0 0 24px}
+.tags li{background:var(--surf);border:1px solid var(--line);padding:6px 14px;border-radius:99px;font-size:15px}
+.media{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:760px){.media{grid-template-columns:1.4fr 1fr}}
+.box{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:20px}
+.video{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+audio{width:100%}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.flow{padding:0;margin:0 0 24px;list-style:none;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));counter-reset:s}
+.flow li{counter-increment:s;background:var(--surf);border-left:5px solid var(--acc2);padding:14px 16px;border-radius:0 10px 10px 0}
+.flow li::before{content:counter(s) ". ";font-weight:700;color:var(--acc)}
+dl{margin:0}dt{font-weight:700;margin-top:10px}dd{margin:0;color:var(--mut)}
+.cta{background:var(--ink);color:var(--bg);border-radius:14px;padding:24px;margin-top:24px}
+.cta p{margin-bottom:12px}.cta .btn{background:var(--acc2);color:#14302B}
+footer{text-align:center;color:var(--mut);padding:32px 20px;font-size:14px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="Меню">
+<a href="#about">Обо мне</a><a href="#portfolio">Резюме и портфолио</a><a href="#idea">Бизнес-идея</a><a href="#blog">Блог</a><a href="#contacts">Контакты</a>
+</nav>
+
+<section id="about">
+<div class="hero">
+<div>
+<h1>Денис Андрейчик</h1>
+<p class="lead">Превращаю учёбу в игру: помогаю школам и вузам вовлекать студентов игровыми механиками.</p>
+<p>Я студент, которому интересно, почему одни занятия захватывают, а другие утомляют. Изучаю геймификацию и игровые методы обучения, сам создаю учебные квесты и викторины. Ищу стажировку в EdTech, а также в разработке образовательных продуктов и игровых курсов.</p>
+<ul class="tags"><li>Геймификация обучения</li><li>Игровой дизайн</li><li>Образовательные квесты</li><li>Kahoot, Quizizz, Miro</li><li>Исследование аудитории</li><li>Презентации и выступления</li></ul>
+<a class="btn" href="https://www.linkedin.com/in/%D0%B4%D0%B5%D0%BD%D0%B8%D1%81-%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9%D1%87%D0%B8%D0%BA-1b6950448/" target="_blank" rel="noopener">Мой LinkedIn</a>
+<a class="btn alt" href="#contacts">Связаться</a>
+</div>
+<div class="photo" role="img" aria-label="Фото: Денис Андрейчик">ДА</div>
+</div>
+<div class="media" style="margin-top:40px">
+<div class="box"><h3>Видеопрезентация</h3>
+<div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Видеопрезентация" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+<div class="box"><h3>Аудиоистория</h3>
+<p>Как одна настольная игра на уроке изменила моё отношение к учёбе.</p>
+<audio controls preload="none" src="audio/story.mp3">Ваш браузер не поддерживает аудио.</audio></div>
+</div>
+</section>
+
+<section id="portfolio">
+<h2>Резюме и портфолио</h2>
+<a class="btn" href="cv/Andreychik_CV.pdf" target="_blank" rel="noopener">Посмотреть резюме</a>
+<a class="btn alt" href="cv/Andreychik_CV.pdf" download>Скачать резюме</a>
+<div class="grid" style="margin-top:20px">
+<div class="box"><h3>Образование</h3><p>Бакалавриат, направление «Менеджмент», 3 курс. Курсы: управление проектами, цифровые продукты, психология мотивации.</p><h3>Опыт</h3><p>Волонтёр-организатор студенческих игровых турниров (2025–2026).</p></div>
+<div class="box"><h3>Проект 1. Квест для первокурсников</h3><dl><dt>Задача</dt><dd>Помочь новичкам быстрее познакомиться с университетом.</dd><dt>Что сделал</dt><dd>Разработал квест с заданиями по кампусу и системой баллов.</dd><dt>Результат</dt><dd>Участвовали 85 человек, 90% оценили формат как полезный.</dd><dt>Навыки</dt><dd>Игровой дизайн, организация, обратная связь</dd></dl></div>
+<div class="box"><h3>Проект 2. Викторина для повторения темы</h3><dl><dt>Задача</dt><dd>Сделать подготовку к зачёту менее скучной.</dd><dt>Что сделал</dt><dd>Создал командную викторину в Kahoot с рейтингом и бонусами.</dd><dt>Результат</dt><dd>Средний балл группы на зачёте вырос на 11%.</dd><dt>Навыки</dt><dd>Kahoot, подготовка материалов, ведение занятия</dd></dl></div>
+</div>
+</section>
+
+<section id="idea">
+<h2>Моя бизнес-идея: «ИгроУрок»</h2>
+<p>Платформа, которая помогает преподавателям встраивать игры в обычные занятия.</p>
+<div class="grid">
+<div class="box"><h3>Целевая аудитория</h3><p>Школьные учителя и преподаватели вузов, а также студенты 1–3 курсов.</p></div>
+<div class="box"><h3>Проблема</h3><p>Студентам скучно на лекциях, вовлечённость падает, а у преподавателей нет времени и навыков придумывать игры.</p></div>
+<div class="box"><h3>Решение и продукт</h3><p>Онлайн-конструктор готовых игровых сценариев: квесты, викторины и командные задания под любую тему.</p></div>
+<div class="box"><h3>Ценностное предложение</h3><p>Игровое занятие за 15 минут подготовки: студенты вовлечены, результаты видны.</p></div>
+</div>
+<h3 style="margin-top:28px">Как это работает</h3>
+<ol class="flow"><li>Преподаватель выбирает тему и формат игры.</li><li>Платформа создаёт сценарий с заданиями и баллами.</li><li>Студенты играют, а преподаватель получает отчёт об успехах.</li></ol>
+<div class="cta"><p>Вы преподаватель или представляете учебное заведение? Давайте протестируем первую игру на вашем курсе.</p><a class="btn" href="mailto:denis.andreychik@example.com?subject=ИгроУрок">Написать мне</a></div>
+</section>
+
+<section id="blog">
+<h2>Блог: почему игры работают в образовании</h2>
+<article>
+<p>Каждый, кто играл в компьютерные игры, замечал: за прохождение сложного уровня можно просидеть несколько часов и не заскучать. Почему тогда обычная учёба так часто утомляет? Ответ в том, как устроены игры.</p>
+<p>Во-первых, в игре всегда понятна цель. Студент видит, что нужно сделать и зачем. На лекции же цель часто размыта: «изучить тему». Во-вторых, игра даёт быструю обратную связь. Ошибся — сразу увидел результат и попробовал снова. На контрольной обратная связь приходит через неделю, когда эмоции уже забылись.</p>
+<p>В-третьих, в игре безопасно ошибаться. Проигрыш не портит оценку, а становится частью обучения. Это снижает тревожность и помогает пробовать сложное. Наконец, игры дают чувство прогресса: баллы, уровни и достижения показывают, что движение вперёд есть.</p>
+<p>Важно понимать, что геймификация — это не просто добавить баллы к скучному заданию. Если механика не связана с содержанием, она быстро надоедает. Хорошая образовательная игра строится вокруг учебной цели: чтобы выиграть, студент должен применить знания.</p>
+<p>На своём опыте я видел, как простая командная викторина оживляет группу, которая обычно молчит. Люди начинают спорить, объяснять друг другу и запоминают материал. Именно поэтому я хочу развивать эту идею и помогать преподавателям делать занятия, на которые хочется приходить.</p>
+</article>
+</section>
+
+<section id="contacts">
+<h2>Контакты</h2>
+<p>Открыт к стажировкам, проектам и сотрудничеству в сфере EdTech и образовательных игр.</p>
+<a class="btn" href="https://www.linkedin.com/in/%D0%B4%D0%B5%D0%BD%D0%B8%D1%81-%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9%D1%87%D0%B8%D0%BA-1b6950448/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn alt" href="mailto:denis.andreychik@example.com">denis.andreychik@example.com</a>
+</section>
+<footer>© 2026 Денис Андрейчик</footer>
+</body>
+</html>
